@@ -38,7 +38,7 @@ function formatarReais(centavos: number) {
 }
 
 function formatarData(iso: string) {
-  return new Date(iso).toLocaleString('pt-BR');
+  return new Date(iso).toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' });
 }
 
 const corPorStatus: Record<string, string> = {
